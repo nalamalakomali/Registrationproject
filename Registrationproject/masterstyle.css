@@ -1,0 +1,67 @@
+﻿*{
+
+    margin:0px;
+    padding:0px;
+}
+nav {
+    margin-left: 0px;
+    margin-top: 0px;
+    padding:50px;
+    width:100%;
+ background-color: darkslategrey;
+}
+ ul{
+    list-style:none
+}
+  
+   ul li{
+   text-align:center;
+   line-height:35px;
+   float:left;
+   width:120px;
+   position:relative;
+   font-size:initial;
+  
+}
+   ul li a{
+     text-decoration:none;
+     color:forestgreen;
+     display:block;
+ }
+   ul li a:hover{
+     background-color:darkslateblue;
+     border-radius:10px;
+ }
+    ul ul{
+      position:absolute;
+      display:none;
+  }
+  ul li:hover > ul{
+      display:block;
+  }
+footer {
+    background-color:darkslategrey;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+maincontent {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.logo-image {
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.logo-message {
+    text-align: center;
+    margin-top: 10px; /* Adjust the spacing between the logo and the text */
+    color: #333; /* Customize the text color */
+    font-size: 14px; /* Customize the text size */
+}

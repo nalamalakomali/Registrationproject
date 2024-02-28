@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mymaster.Master.cs" Inherits="Registrationproject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+ My first website
+    </title>
+    <link href="masterstyle.css" rel="stylesheet" />
+    
+    <style>
+        body{
+            background-image:url(img/tiger.jpg);
+            background-attachment:fixed;
+            background-size:cover;
+           
+        }
+       
+        
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server" ></asp:ContentPlaceHolder>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+ <nav>
+     <div style="margin-top:0px;">
+     <img src="img/logo2.png" style="padding:5px;height:50px;width:100px; border-radius:20px;" />
+     <img src="img/statelogo.png" style="padding:5px; margin-left:60px; height:50px;width:100px; border-radius:10px;" />
+         <img src="img/cm.jpg" style="padding:5px;margin-left:70px; height:55px;width:110px;border-radius:10px;" />
+         <h5 style="margin-left:340px;color:white;">Sri Anumula Revanth Reddy</h5>
+         <p style="margin-left:340px;color:white;">Hon'ble Chief Minister</p>
+
+         </div>
+           
+            <ul>
+                    <li><a href="#">Home</a></li>
+                     <li><a href="#">Auto Zoo</a></li>
+                    <li><a href="#">Animal Info</a></li>
+                    <li><a href="#">Visitors Info</a></li>
+                    <li><a href="log.aspx">Conservation</a></li>
+                <li><a href="#">Zoo School</a></li>
+                <li><a href="#">Adoption</a></li>
+                <li><a href="#">Current Openings</a></li>
+                <li><a href="#">Adoption</a></li>
+                <li><a href="#">Tendors</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="log.aspx">Login</a></li>
+                    
+                </ul>
+                </nav>
+        <div style="margin-left:0px;margin-top:10px; color:white;">
+            <h5>Welcome to</h5>
+            <h3>NEHRU</h3>
+            <h1>ZOOLOGICAL PARK</h1>
+        </div>
+        <div>
+            <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+        
+         <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+             <p>Copyright 2021 Nehru Zoological Park.
+Content owned, maintained and updated by Nehru Zoological Park</p>
+    </footer>
+       
+           
+
+        
+        
+    </form>
+</body>
+</html>
